@@ -17,12 +17,6 @@
 
 body {
     font-family: "Rubik", sans-serif;
-    background: var(--dark);
-    min-height: 100vh;
-}
-
-main {
-    display: grid;
     height: 100vh;
 }
 
