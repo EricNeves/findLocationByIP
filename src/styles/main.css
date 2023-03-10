@@ -1,0 +1,46 @@
+:root {
+    --dark: #0D1117;
+    --light: #F9F9F9;
+    --white: #FFFFFF;
+    --green: #04D361;
+    --danger: #E83F5B;
+    --blue: #3371F2;
+    --purple: #3371F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    background: var(--dark);
+    min-height: 100vh;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+}
+
+section, aside {
+    width: 100%;
+    height: 100%;
+}
+.contentform{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.contentInfo {
+    background: var(--light);
+}
+.contentMap {
+    background: var(--white);
+}
+.contentform, .contentInfo,
+.contentMap {
+    padding: 1rem;
+}
