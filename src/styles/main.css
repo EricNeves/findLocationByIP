@@ -30,16 +30,7 @@ section, aside {
     width: 100%;
     height: 100%;
 }
-.contentform{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-.contentInfo {
-    background: var(--light);
-}
-.contentMap {
-    background: var(--white);
-}
+
 .contentform, .contentInfo,
 .contentMap {
     padding: 1rem;
