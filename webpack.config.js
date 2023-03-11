@@ -3,6 +3,7 @@ const path = require("path")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const CopyWebpackPlugin    = require("copy-webpack-plugin")
 const HtmlWebpackPlugin    = require("html-webpack-plugin")
+const Dotenv               = require('dotenv-webpack')
 
 module.exports = {
     mode: "development",
@@ -24,6 +25,7 @@ module.exports = {
         compress: true
     },
     plugins: [
+        new Dotenv(),
         new HtmlWebpackPlugin({
             template: "src/index.html",
             filename: "index.html",

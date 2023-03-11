@@ -1,0 +1,7 @@
+.contentMAp {
+    z-index: -999;
+}
+#map {
+    width: 100%;
+    height: 40vh;
+}

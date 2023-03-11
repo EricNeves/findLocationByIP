@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+    <div class="popup">
+        <section>
+            <div class="iconAlert">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="textAlert">
+                <p>Please, enter a valid IP address</p>
+            </div>
+            <div class="closeAlert">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </section>
+    </div>
+
     <main role="application">
         <header class="contentForm">
             <img src="./images/favicon.png" alt="">
@@ -32,12 +53,38 @@
         </header>
 
         <section class="contentInfo">
+            <div class="ip">
+                <h2>IP ADDRESS 🛰</h2>
+                <h3>127.0.0.1</h3>
+            </div>
 
+            <div class="region">
+                <h2>Region 🌎</h2>
+                <h3>Amazonas</h3>
+            </div>
+
+            <div class="country">
+                <h2>Country 🗺</h2>
+                <h3>BR</h3>
+            </div>
+
+            <div class="timezone">
+                <h2>TIMEZONE ⏱</h2>
+                <h3>-08:00</h3>
+            </div>
         </section>
 
-        <aside class="contentMap">
+        <section class="contentMap">
+            <div id="map"></div>
+        </section>
 
-        </aside>
+        <footer>
+            <a href="https://github.com/ericneves" target="_blank">@EricNeves 🪐</a>
+        </footer>
     </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 </body>
+
 </html>

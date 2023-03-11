@@ -1,0 +1,40 @@
+.contentInfo {
+    width: 100%;
+    background: var(--light);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+.contentInfo h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark);
+    opacity: .9;
+    margin: 1rem 0;
+}
+.contentInfo h3 {
+    color: var(--dark);
+    opacity: .7;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media(max-width: 800px) {
+    .contentInfo h2 {
+        font-size: .8rem;
+        font-weight: 500;
+        color: var(--dark);
+        opacity: .9;
+    }
+    .contentInfo h3 {
+        color: var(--pink);
+        font-size: .8rem;
+    }
+    
+}
+@media(max-width: 650px) {
+    .contentInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

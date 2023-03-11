@@ -50,3 +50,12 @@ form button:hover {
 form button i {
     font-size: 1rem;
 }
+
+@media (max-width: 550px) {
+    .form {
+        width: 100%;
+    }
+    .contentForm h1 {
+        font-size: 1.1rem;
+    }
+}
