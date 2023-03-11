@@ -131,15 +131,15 @@ form input {
 form:hover{
     outline: auto;
     outline-style: solid;
-    outline-color: var(--pink);
+    outline-color: var(--purple);
 }
 form button {
     padding: .8rem 1rem;
-    border: solid var(--pink);
+    border: solid var(--purple);
     outline: none;
     border-radius: 0 .5rem .5rem 0;
     cursor: pointer;
-    background: var(--pink);
+    background: var(--purple);
     color: var(--light);
 }
 form button:hover {
