@@ -81,6 +81,7 @@ footer {
 }
 footer a {
     color: var(--green);
+    opacity: .8;
 }
 footer a:hover {
     text-decoration: underline;
