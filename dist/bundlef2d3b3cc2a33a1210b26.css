@@ -80,7 +80,7 @@ footer {
     background: var(--dark-secondary);
 }
 footer a {
-    color: var(--purple);
+    color: var(--green);
 }
 footer a:hover {
     text-decoration: underline;
