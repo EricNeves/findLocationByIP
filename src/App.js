@@ -11,10 +11,10 @@ function handleClick( e ) {
     const form = document.forms.form 
     const host = form.host.value
 
-    const key = process.env.KEY_IPIFY_API
+    const API_KEY = process.env.KEY_IPIFY_API
 
     ajax({
-        url: `https://geo.ipify.org/api/v2/country,city?apiKey=${key}&ipAddress=${host}`,
+        url: `https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&ipAddress=${host}`,
         success( res ) {
             renderMap({
                 lat: res.location.lat,
