@@ -1,6 +1,6 @@
 :root {
-    --dark: #0D1117;
-    --dark-secondary: #050505;
+    --dark: #161B22;
+    --dark-secondary: #010409;
     --light: #F8F9FA;
     --white: #FFFFFF;
     --green: #04D361;
@@ -77,7 +77,7 @@ section {
 footer {
     padding: 1rem;
     text-align: center;
-    background: var(--grey);
+    background: var(--dark-secondary);
 }
 footer a {
     color: var(--purple);
