@@ -4,7 +4,7 @@
 
 <img src="https://img.shields.io/github/license/ericneves/findLocationByIP?color=blue&label=license&logo=appveyor&logoColor=white&style=flat-square"> <img src="https://img.shields.io/github/last-commit/ericneves/findLocationByIP?color=blue&logo=appveyor&logoColor=white&style=flat-square">
 
-<p>Projeto web desenvolvido com objetivo de localizar coordenadas pelo endereço IP. Foram implentadas e utlizadas duas APIs (<a href="https://leafletjs.com/">LeafletJS</a>, <a href="https://www.ipify.org/">IPIFY API</a>), para pegar a posição (<b>Latitude e Longitude</b>) e renderizar no mapa. Além do mais, foram inseridas ferramentas como Webpack, Babel, Dotenv e entre outras.</p>
+<p>Projeto web desenvolvido com objetivo de localizar coordenadas pelo endereço IP. Foram implementadas e utilizadas duas APIs (<a href="https://leafletjs.com/">LeafletJS</a>, <a href="https://www.ipify.org/">IPIFY API</a>), para pegar a posição (<b>Latitude e Longitude</b>) e renderizar no mapa. Além do mais, foram inseridas ferramentas como Webpack, Babel, Dotenv e entre outras.</p>
 
 <p>O site foi criado baseado em parte de um projeto proposto na plataforma <a href="https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0"><b>Frontend Mentor</b></a>.</p>
 
