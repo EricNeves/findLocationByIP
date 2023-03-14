@@ -10,7 +10,7 @@
 
 <img src=".github/screenshot.png">
 
-#### Observações❗️
+#### Observações ❗️
 
 <p>Para que o website seja executado em sua máquina, será preciso fazer um cadastro em <a href="https://www.ipify.org/">IPIFY API</a> e copiar a chave de acesso (<b>ApiKey</b>) para posteriormente ser utilizada na aplicação.</p>
 
