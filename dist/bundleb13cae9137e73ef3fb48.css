@@ -7,9 +7,10 @@
 }
 
 :root {
-    --dark: #0D1117;
+    --dark: #251B37;
     --light: #f9f9f9;
-    --purple: #8734fe;
+    --yellow: #E7B10A;
+    --red: #DF2E38;
 }
 
 body {
@@ -26,16 +27,19 @@ main {
     left: 3.5rem;
     top: .7rem;
     width: 24rem;
-    height: 16rem;
+    height: 18rem;
     padding: 1rem;
     border-radius: .2rem;
-    background: var(--purple);
+    background: var(--dark);
 }
 
+form {
+    margin: 1rem;
+}
 input[type="text"] {
     border: none;
     background: transparent;
-    border-bottom: .16rem solid var(--light);
+    border-bottom: .16rem solid var(--yellow);
     width: 100%;
     outline: none;
     padding: 1rem 0rem;
@@ -44,12 +48,26 @@ input[type="text"] {
     opacity: .8;
     transition: all .2s linear;
 }
+
+input[type="text"].active {
+    border: none;
+    background: transparent;
+    border-bottom: .16rem solid var(--red);
+    color: var(--red);
+    width: 100%;
+    outline: none;
+    padding: 1rem 0rem;
+    color: var(--light);
+    font-size: 1rem;
+    opacity: 1;
+    transition: all .2s linear;
+}
 input[type="text"]:focus {
     opacity: 1;
 }
 
 input[type="text"]::placeholder {
-    color: var(--light);
+    color: var(--yellow);
 }
 
 label[for="host"] {
@@ -61,27 +79,32 @@ label[for="host"] i {
     margin-left: .3rem;
 }
 
-form {
-    margin: 1rem;
+
+@media (max-width: 650px) {
+    .contentForm {
+        width: 80%;
+    }
 }
 .contentInfo {
     margin: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
-
-table { 
-    width: 100%;
-    text-align: center;
+.contentInfo p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-table th, table th i {
+.contentInfo span:nth-child(1) {
+    font-weight: 400;
+    color: var(--light);
+    opacity: .8;
     font-size: .9rem;
+}
+.contentInfo span:nth-child(2) {
     font-weight: 500;
     color: var(--light);
     opacity: .8;
-}
-table td {
-    font-size: .8rem;
-    color: var(--light);
+    font-size: .9rem;
 }
 #map {
     width: 100%;
