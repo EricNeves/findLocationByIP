@@ -24,7 +24,7 @@ input[type="text"] {
     transition: all .2s linear;
 }
 
-/*input[type="text"].active {
+input[type="text"].active {
     border: none;
     background: transparent;
     border-bottom: .16rem solid var(--red);
@@ -36,7 +36,7 @@ input[type="text"] {
     font-size: 1rem;
     opacity: 1;
     transition: all .2s linear;
-}*/
+}
 input[type="text"]:focus {
     opacity: 1;
 }
