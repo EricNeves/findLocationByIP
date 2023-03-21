@@ -43,7 +43,7 @@ main {
 form {
     margin: 1rem;
 }
-input[type="text"] {
+#host {
     border: none;
     background: transparent;
     border-bottom: .16rem solid var(--yellow);
@@ -56,7 +56,7 @@ input[type="text"] {
     transition: all .2s linear;
 }
 
-input[type="text"].active {
+#host.active {
     border: none;
     background: transparent;
     border-bottom: .16rem solid var(--red);
@@ -69,11 +69,11 @@ input[type="text"].active {
     opacity: 1;
     transition: all .2s linear;
 }
-input[type="text"]:focus {
+#host:focus {
     opacity: 1;
 }
 
-input[type="text"]::placeholder {
+#host::placeholder {
     color: var(--yellow);
 }
 
