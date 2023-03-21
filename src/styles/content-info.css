@@ -1,24 +1,21 @@
 .contentInfo {
     margin: 1rem;
-    margin-top: 2.2rem;
-    text-align: center;
+    margin-top: 2rem;
 }
-
-table {
-    width: 100%;
-    text-align: center;
+.contentInfo p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-table:nth-child(1) {
-    margin-bottom: 1rem;
-}
-
-table th {
+.contentInfo span:nth-child(1) {
+    font-weight: 400;
+    color: var(--light);
+    opacity: .8;
     font-size: .9rem;
+}
+.contentInfo span:nth-child(2) {
     font-weight: 500;
     color: var(--light);
     opacity: .8;
-}
-table td {
-    color: var(--light);
-    font-size: .8rem;
+    font-size: .9rem;
 }
