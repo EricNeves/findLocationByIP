@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
+
 :root {
     --dark: #251B37;
     --light: #f9f9f9;
@@ -45,12 +45,10 @@ input[type="text"] {
     color: var(--light);
     font-size: 1rem;
     opacity: .8;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
     transition: all .2s linear;
 }
 
-input[type="text"].active {
+/*input[type="text"].active {
     border: none;
     background: transparent;
     border-bottom: .16rem solid var(--red);
@@ -61,28 +59,10 @@ input[type="text"].active {
     color: var(--light);
     font-size: 1rem;
     opacity: 1;
-    -webkit-transition: all .2s linear;
-    -o-transition: all .2s linear;
     transition: all .2s linear;
-}
+}*/
 input[type="text"]:focus {
     opacity: 1;
-}
-
-input[type="text"]::-webkit-input-placeholder {
-    color: var(--yellow);
-}
-
-input[type="text"]::-moz-placeholder {
-    color: var(--yellow);
-}
-
-input[type="text"]:-ms-input-placeholder {
-    color: var(--yellow);
-}
-
-input[type="text"]::-ms-input-placeholder {
-    color: var(--yellow);
 }
 
 input[type="text"]::placeholder {
@@ -110,15 +90,9 @@ label[for="host"] i {
 }
 
 .contentInfo p {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
 .contentInfo span:nth-child(1) {
     font-weight: 400;
@@ -138,4 +112,5 @@ label[for="host"] i {
     background: var(--dark);
     position: fixed;
 }
+
 
