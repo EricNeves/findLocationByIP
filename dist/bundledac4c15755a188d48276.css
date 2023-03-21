@@ -5,7 +5,6 @@
     list-style: none;
     text-decoration: none;
 }
-
 :root {
     --dark: #251B37;
     --light: #f9f9f9;
@@ -32,7 +31,6 @@ main {
     border-radius: .2rem;
     background: var(--dark);
 }
-
 form {
     margin: 1rem;
 }
@@ -89,6 +87,7 @@ label[for="host"] i {
     margin: 1rem;
     margin-top: 2rem;
 }
+
 .contentInfo p {
     display: flex;
     justify-content: space-between;
@@ -112,3 +111,5 @@ label[for="host"] i {
     background: var(--dark);
     position: fixed;
 }
+
+
