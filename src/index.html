@@ -23,62 +23,63 @@
 </head>
 
 <body>
-    <div class="popup">
-        <section>
-            <div class="iconAlert">
-                <i class="fa-solid fa-triangle-exclamation"></i>
-            </div>
-            <div class="textAlert">
-                <p>Sorry, something is wrong :(</p>
-            </div>
-            <div class="closeAlert">
-                <i class="fa-solid fa-circle-xmark"></i>
-            </div>
-        </section>
-    </div>
-
+   
     <main role="application">
-        <header class="contentForm">
-            <img src="./images/favicon.png" alt="">
-            <h1>Find location by IP</h1>
-            <div class="form">
-                <form name="form">
-                    <input type="text" name="host" placeholder="Enter the IP Address">
+        <map id="map"></map>
 
-                    <button type="submit" title="Search">
-                        <i class="fa-solid fa-circle-arrow-right"></i>
-                    </button>
-                </form>
-            </div>
-        </header>
+        <div class="contentForm">
+            <form name="form">
+                <label for="host">
+                    Find Location By IP
+                    <i class="fa-solid fa-satellite-dish"></i>
+                    <input type="text" autocomplete="off" name="host" placeholder="Enter the IP Address">
+                </label>
+            </form>
 
-        <section class="contentInfo">
-            <div class="ip">
-                <h2>IP Address</h2>
-                <h3>127.0.0.1</h3>
+            <div class="contentInfo">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                IP
+                                <i class="fa-solid fa-location-dot"></i>
+                            </th>
+                            <th>
+                                City
+                                <i class="fa-solid fa-map-location-dot"></i>
+                            </th>
+                        </tr>
+    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="ip">127.0.0.1</td>
+                            <td id="city">Manaus</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                Region
+                                <i class="fa-solid fa-flag"></i>
+                            </th>
+                            <th id="country">
+                                Country
+                                <i class="fa-solid fa-earth-oceania"></i>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="region">Amazonas</td>
+                            <td id="country">BR</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="city">
-                <h2>City</h2>
-                <h3>Manaus</h3>
-            </div>
-            <div class="region">
-                <h2>Region</h2>
-                <h3>Amazonas</h3>
-            </div>
-
-            <div class="country">
-                <h2>Country</h2>
-                <h3>BR</h3>
-            </div>
-        </section>
-
-        <section class="contentMap">
-            <div id="map"></div>
-        </section>
-
-        <footer>
-            <a href="https://github.com/ericneves" target="_blank">@EricNeves 🪐</a>
-        </footer>
+        </div>
     </main>
 
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"

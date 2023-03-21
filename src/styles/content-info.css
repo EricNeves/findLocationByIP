@@ -1,40 +1,24 @@
 .contentInfo {
-    width: 100%;
-    background: var(--dark-secondary);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem;
+    margin-top: 2.2rem;
     text-align: center;
 }
-.contentInfo h2 {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--light);
-    opacity: .9;
-    margin: 1rem 0;
-    font-weight: 300;
+
+table {
+    width: 100%;
+    text-align: center;
 }
-.contentInfo h3 {
-    color: var(--grey);
-    opacity: .7;
-    margin: 1rem 0;
-    font-size: 1rem;
-    font-weight: 400;
+table:nth-child(1) {
+    margin-bottom: 1rem;
 }
 
-@media(max-width: 800px) {
-    .contentInfo h2 {
-        font-size: .8rem;
-        font-weight: 500;
-        color: var(--dark);
-        opacity: .9;
-    }
-    .contentInfo h3 {
-        font-size: .8rem;
-    }
-    
+table th {
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--light);
+    opacity: .8;
 }
-@media(max-width: 650px) {
-    .contentInfo {
-        grid-template-columns: repeat(2, 1fr);
-    }
+table td {
+    color: var(--light);
+    font-size: .8rem;
 }

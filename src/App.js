@@ -3,13 +3,13 @@ import renderInfo  from "./utils/renderInfo"
 import renderMap   from "./utils/renderMap"
 import ajax        from "./utils/ajax"
 
-const button = document.querySelector("button")
+const form = document.querySelector("form")
 
-function handleClick( e ) {
+function handleSubmit( e ) {
     e.preventDefault()
 
-    const form = document.forms.form 
-    const host = form.host.value
+    const formValue = document.forms.form 
+    const host = formValue.host.value
 
     const API_KEY = process.env.KEY_IPIFY_API
 
@@ -33,4 +33,4 @@ renderMap({
     lng: -60.02343566111872
 })
 
-button.addEventListener('click', handleClick)
+form.addEventListener('submit', handleSubmit)
