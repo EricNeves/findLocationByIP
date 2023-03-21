@@ -1,11 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
+
 :root {
     --dark: #251B37;
     --light: #f9f9f9;
