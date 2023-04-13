@@ -96,7 +96,9 @@ label[for="host"] i {
     margin: 1rem;
     margin-top: 2rem;
 }
-
+.contentInfo span {
+    margin-bottom: .4rem;
+}
 .contentInfo p {
     display: flex;
     justify-content: space-between;
