@@ -1,6 +1,6 @@
 <img src="https://findlocationbyip.netlify.app/images/favicon.png">
 
-#### Find location by IP 🔎
+#### Find location by IP 
 
 <img src="https://img.shields.io/github/license/ericneves/findLocationByIP?color=blue&label=license&logo=appveyor&logoColor=white&style=flat-square"> <img src="https://img.shields.io/github/last-commit/ericneves/findLocationByIP?color=blue&logo=appveyor&logoColor=white&style=flat-square">
 
